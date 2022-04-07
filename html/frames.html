@@ -6,58 +6,32 @@
         </head>
             <body>
                 <h1>Melty Blood/Advanced Mechanics</h1>
-           
-            <strong>Blockstring</strong>
+            <p>Damage Modifier</p>
                 <div>
-                Strings (usually airtight) of attacks that get blocked.
+                The damage modifier system works much like Act Cadenza. Each character has a set life total of 11400, but take different amounts of damage at different points of their life bars. 
+                Another thing to note is that there is a Stance Modifier that changes the Damage modifier depending on if the character is in Stand, Crouch, or Jump state.
+                These are the values for the Stance Modifier:
+                <ul>
+                    <li>Jump: x0.88</li>
+                    <li>Stand: x1.00</li>
+                    <li>Crouch: x1.08</li>
+                </ul>
+                These values modify the <b>Damage Modifier</b> during combos, as well. For example, if you combo them on the ground, then knock them in the air, they will get the Jump Stance modifier when they are in the air. Damage Modifier values are consistent across all moon styles for every character except Mech-Hisui, Nero, and Neco-Mech. For the Maids (Hisui & Kohaku) team characters, they each have their own Damage Modifiers.
                 </div>
-            <strong>Bunker</strong>
-                    <div>
-                Inputting 214D with any moon characters. When used during guarding/blocking, 
-                            your character will attempt to clash the oncoming opponent's attack and follow up with a unique bunker attack.
-                For half moon characters, this attack has invincibility frames, knocks down without dealing damage, 
-                            and costs 100% meter. For other moon characters, this attack deals damage and costs 50% meter.
-<div>
-When done outside blocking, the characters does a quick EX shield and then follows up with the damaging version of the bunker 
-       (even if you are using half moon style). This does not cost any meter, but degrades guard bar. Has a clash frame on startup.
-            </div>
-                </div>
-                <strong>Counter Hit (CH)</strong>
-                <div>
-                    When a move hits the opponent while they have a move out during its startup or active frames.
-                    Puts the opponent in a longer period of hitstun and untech time than a normal hit, and may even knock them down. 
-                    Some moves and actions can be counter hit during recovery too, making them much riskier to use.
-                </div>
-                <strong>Dodge and Air-Dodge</strong>
-                <div>
-                    2E or 2A+B causes the character to shine and become invincible for a short time. 
-                    However, it has recovery, so it is not possible to dodge every attack. A dodge weakens the guard bar, 
-                    so it shouldn't be overly relied upon for defense.
-                Some characters' ground dodges are actually rolls that moves your character toward a direction.
-                        This can be used to go behind the opponent.Air dodges have uses outside that of just avoiding the opponent's attack. 
-                They can be used to realign your character to face the opponent in air during combos or for cross ups.
-                </div>
-                <strong>Frame Trap</strong>
-                <div> A sequence of moves in which one (usually advantageous on block) attack is used, 
-                        followed by a second one that hits as soon as the opponent's hit/block stun ends. 
-                        This leaves a very small gap during which if the opponent tries to use a move such as 2A,
-                        they will get counter hit during their startup by the frame trap's next attack.
-                    This can also be referred to as <b> Stagger Pressure</b> in blockstrings.</div>
-            
-                 <strong> Another Arc-Drive (AAD) </strong>
-                    <div>
-         41236C in BLOOD HEAT will activate another, usually stronger, version of the Arc-Drive. 
-         Using it will deplete all your remaining Magic Circuit.
-                    </div>
-<h2>Standard notation</h2>
-    <p>
-        This is the standard notation for transcribing combos on this wiki. 
-            You'll find similar notation conventions in other airdashing fighting games, 
-            as it makes combos or complex blockstrings easy to describe and read.</p>
-    <div>
-        You will see character pages that are more up to date use this table in their combo sections, for quick reference:
-        <!--insert a  table here , with combo notations -->
-</div>
+            <p>Correction Value</p>
+                    <span>
+                        When starting a combo, one factor to keep in mind is <b>Correction Value</b> (also referred to as <b>proration</b>). 
+                        This value, among other factors, determines how much damage any individual hit in a combo will deal.
+                        Formally, the correction value is a value in the interval between 0% and 100% that can only ever decrease or remain the same as a result of a hit. 
+                        <div>Most hits have a modifier that acts as an upper clamp on the correction value, setting the correction value to the fixed modifier if the fixed modifier is lower (i.e. closer to 0), or leaving it alone otherwise. 
+                          Some hits have a scaling multiplier that always decreases the current correction value by some factor (less than one). Cancelling any special move into an EX move or Arc Drive super adds a 65% scaling multiplier. 
+                        An OTG relaunch (distinct from a normal OTG hit) also concurs with a 65% scaling multiplier. All of these updates to the correction value occur after the hit's damage is calculated; as a consequence, the damage that an individual hit is not affected by how it changes the correction value.</div>
+
+                <b> The Reverse Penalty</b> is a value closely related to the correction value. It inhabits the interval between 0% and 55%. Unlike the correction value, the reverse penalty is not tied to a specific combo, and exists throughout the game and changes in response to the actions that a character takes. By default the reverse penalty is 0%.
+                    It can increase as a result of specific actions being taken, such as performing a reverse beat (adds 22.5% reverse penalty), cancelling shield or EX-shield into something other than another shield (40% for actions that can only be done out of EX-shield, 30% for actions that can be done out of either), or even performing multiple jabs in quick succession (adds 0.8% reverse penalty). 
+                    <div> After taking an action that raises the reverse penalty, it remains at that value for a duration proportional to the amount by which it was raised, then decreases linearly towards 0 again. The significance of the reverse penalty is its role in determining correction value: if the correction value is greater than the reverse penalty minus one, it is set to that value. Notably, unlike the ways mentioned before, it updates the correction value before the hit's damage is calculated.</div>
+        </span>
+
 
     </body>
 </html>
