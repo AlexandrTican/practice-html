@@ -9,10 +9,11 @@ body
 {
     width=300px;
     padding:30px;
+    position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background:rgba(0,0,0,0.4);
+    background:rgba(0, 0, 0, 0.066);
     text-align:center
 }
 .box h1
@@ -60,5 +61,5 @@ body
 
 }
 .box input[type="submit"]:hover{
-    background: #ffc400ec;
+    background: #ff2a00ec;
 }
