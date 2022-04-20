@@ -1,12 +1,12 @@
 .menu{
-  background-color: #333;
+  background-color: rgb(255, 252, 252);
   overflow: hidden;
 }
 
 
 .menu a {
   float: left;
-  color: #f2f2f2;
+  color: #170ebb;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -15,7 +15,7 @@
 
 
 .menu a:hover {
-  background-color: #ddd;
+  background-color: rgb(70, 68, 68);
   color: black;
 }
 
@@ -29,7 +29,7 @@ body{
   background-color: lightgray;
 }
 h1 {
-  color: darkgreen;
+  color: rgb(118, 25, 7);
   text-align: center;
 }
 p {
