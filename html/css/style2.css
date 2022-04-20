@@ -20,7 +20,7 @@ body
 .box h1
 {
 
-    color:white
+    color:rgba(255, 255, 255, 0.293)
     text-transform: uppercase;
     font-weight: 700;
 }

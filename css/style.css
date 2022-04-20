@@ -3,24 +3,26 @@ body
     margin:0;
     padding:0;
     font-family: sans-serif;
-    background: url(images/bg.webp);
-    background-size:cover;
+
+}
+h1 
+{
+    color:gray;
 }
 .box
 {
     width=300px;
     padding:30px;
-    position:absolute;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    background:rgba(0, 0, 0, 0.066);
+    background:rgba(109, 108, 108, 0.058);
     text-align:center
 }
 .box h1
 {
 
-    color:rgb(225, 62, 8)
+    color:white
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -52,14 +54,15 @@ body
     display: block;
     margin: 20px auto;
     text-align: center;
-    border: 3px solid #0367fd;
+    border: 3px solid #ffc400ec;
     padding: 14px 10px;
     outline : none;
     color: white;
     border-radius: 24px;
     transition: 0.25px;
     cursor:pointer;
+
 }
 .box input[type="submit"]:hover{
-    background: #ff2a00ec;
+    background: #ffc400ec;
 }
