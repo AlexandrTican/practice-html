@@ -1,8 +1,8 @@
 const buttons = document.querySelectorAll("[data-carousel-button]")
 // utilizam atributul data in loc de clasa pentru a simplifica lucrul cu js
 // astfel evitam ca js si clasele sa coincida
-buttons.forEach( button =>){
-    button.addeventListener("click", () => {
+buttons.forEach(button =>{
+    button.addEventListener("click", () => {
      const offset = button.dataset.carouselButton === "next" ? 1 : -1
      const slides = button
      .closest("[data-carousel]")
@@ -16,5 +16,5 @@ buttons.forEach( button =>){
      slides.children[newIndex].dataset.active = true
      delete activeSlide.dataset.active
      //se adauga si se sterge atributul activeslide la un slide
-    }
-}
+    })
+})
