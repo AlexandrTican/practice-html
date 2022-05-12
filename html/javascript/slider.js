@@ -1,4 +1,4 @@
-const buttons = document.querySelector("[data-carousel-button]")
+const buttons = document.querySelectorAll("[data-carousel-button]")
 // utilizam atributul data in loc de clasa pentru a simplifica lucrul cu js
 // astfel evitam ca js si clasele sa coincida
 buttons.forEach( button =>){
