@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <?php
+  require('php/menu.php');
+  ?>
+
+  <main class="contents">
+    <h1>Standard Terms and Abbreviations</h1>
+    <strong>Blockstring</strong>
+    <div>Strings (usually airtight) of attacks that get blocked.</div>
+    <strong>Bunker</strong>
+    <div>
+      Inputting 214D with any moon characters. When used during
+      guarding/blocking, your character will attempt to clash the oncoming
+      opponent's attack and follow up with a unique bunker attack. For half
+      moon characters, this attack has invincibility frames, knocks down
+      without dealing damage, and costs 100% meter. For other moon characters,
+      this attack deals damage and costs 50% meter.
+      <div>
+        When done outside blocking, the characters does a quick EX shield and
+        then follows up with the damaging version of the bunker (even if you
+        are using half moon style). This does not cost any meter, but degrades
+        guard bar. Has a clash frame on startup.
+      </div>
+    </div>
+    <strong>Counter Hit (CH)</strong>
+    <div>
+      When a move hits the opponent while they have a move out during its
+      startup or active frames. Puts the opponent in a longer period of
+      hitstun and untech time than a normal hit, and may even knock them down.
+      Some moves and actions can be counter hit during recovery too, making
+      them much riskier to use.
+    </div>
+    <strong>Dodge and Air-Dodge</strong>
+    <div>
+      2E or 2A+B causes the character to shine and become invincible for a
+      short time. However, it has recovery, so it is not possible to dodge
+      every attack. A dodge weakens the guard bar, so it shouldn't be overly
+      relied upon for defense. Some characters' ground dodges are actually
+      rolls that moves your character toward a direction. This can be used to
+      go behind the opponent.Air dodges have uses outside that of just
+      avoiding the opponent's attack. They can be used to realign your
+      character to face the opponent in air during combos or for cross ups.
+    </div>
+    <strong>Frame Trap</strong>
+    <div>
+      A sequence of moves in which one (usually advantageous on block) attack
+      is used, followed by a second one that hits as soon as the opponent's
+      hit/block stun ends. This leaves a very small gap during which if the
+      opponent tries to use a move such as 2A, they will get counter hit
+      during their startup by the frame trap's next attack. This can also be
+      referred to as <b> Stagger Pressure</b> in blockstrings.
+    </div>
+
+    <strong> Another Arc-Drive (AAD) </strong>
+    <div>
+      41236C in BLOOD HEAT will activate another, usually stronger, version of
+      the Arc-Drive. Using it will deplete all your remaining Magic Circuit.
+    </div>
+    <h2>Standard notation</h2>
+    <p>
+      This is the standard notation for transcribing combos on this wiki.
+      You'll find similar notation conventions in other airdashing fighting
+      games, as it makes combos or complex blockstrings easy to describe and
+      read.
+    </p>
+    <div>
+      You will see character pages that are more up to date use this table in
+      their combo sections, for quick reference:
+      <!--insert a  table here , with combo notations -->
+    </div>
+  </main>
+</body>
+
+</html>
